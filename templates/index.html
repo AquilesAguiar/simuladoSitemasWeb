@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Mortes 24H</title>
 </head>
-<body>
+<body style='background-image: url("static/images/thumb-1920-403408.jpg")'>
     <div class="container mt-5">
         <h1 style="text-align:center;">Game of Thrones</h1>
         {% with messages = get_flashed_messages(with_categories=true) %}
@@ -37,64 +37,64 @@
                 </div>
                 <div style="margin-top:10%;">
                     <h2>Dados da personagem</h2>
-                    <table class="table table-hover">
+                    <table class="table cor table-hover">
                         <thead>
                             <tr>
-                                <th scope="col">Nome</th>
-                                <th scope="col">Genêro</th>
-                                <th scope="col">Cultura</th>
-                                <th scope="col">Data Nascimento</th>
+                                <th class="cor" scope="col">Nome</th>
+                                <th class="cor" scope="col">Genêro</th>
+                                <th class="cor" scope="col">Cultura</th>
+                                <th class="cor" scope="col">Data Nascimento</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>{{info.name}}</td>
-                                <td>{{info.gender}}</td>
-                                <td>{{info.culture}}</td>
-                                <td>{{info.born}}</td>
+                                <td class="cor">{{info.name}}</td>
+                                <td class="cor">{{info.gender}}</td>
+                                <td class="cor">{{info.culture}}</td>
+                                <td class="cor">{{info.born}}</td>
                             </tr>
                         </tbody>
                     </table>
                     <h2>Informações da casa da personagem</h2>
-                    <table class="table table-hover">
+                    <table class="table cor table-hover">
                         <thead>
                             <tr>
-                                <th scope="col">Nome</th>
-                                <th scope="col">Região</th>
-                                <th scope="col">Lema</th>
-                                <th scope="col">Brasão</th>
+                                <th class="cor" scope="col">Nome</th>
+                                <th class="cor" scope="col">Região</th>
+                                <th class="cor" scope="col">Lema</th>
+                                <th class="cor" scope="col">Brasão</th>
                             </tr>
                         </thead>
                         <tbody>
                             {%for casa in casas%}
                                 <tr>
-                                    <td>{{casa.name}}</td>
-                                    <td>{{casa.region}}</td>
-                                    <td>{{casa.words}}</td>
-                                    <td>{{casa.coatOfArms}}</td>
+                                    <td class="cor">{{casa.name}}</td>
+                                    <td class="cor">{{casa.region}}</td>
+                                    <td class="cor">{{casa.words}}</td>
+                                    <td class="cor">{{casa.coatOfArms}}</td>
                                 </tr>
                             {%endfor%}
                         </tbody>
                     </table>
                     <h2>Livros que a personagem aparece personagem</h2>
-                    <table class="table table-hover">
+                    <table class="table cor table-hover">
                         <thead>
                             <tr>
-                                <th scope="col">Nome</th>
-                                <th scope="col">Autor</th>
-                                <th scope="col">Nº de paginas</th>
-                                <th scope="col">Editora</th>
-                                <th scope="col">Data de lançamento</th>
+                                <th class="cor" scope="col">Nome</th>
+                                <th class="cor" scope="col">Autor</th>
+                                <th class="cor" scope="col">Nº de paginas</th>
+                                <th class="cor" scope="col">Editora</th>
+                                <th class="cor" scope="col">Data de lançamento</th>
                             </tr>
                         </thead>
                         <tbody>
                             {%for livro in livros%}
                                 <tr>
-                                    <td>{{livro.name}}</td>
-                                    <td>{{livro.authors[0]}}</td>
-                                    <td>{{livro.numberOfPages}}</td>
-                                    <td>{{livro.publisher}}</td>
-                                    <td>{{livro.released}}</td>
+                                    <td class="cor">{{livro.name}}</td>
+                                    <td class="cor">{{livro.authors[0]}}</td>
+                                    <td class="cor">{{livro.numberOfPages}}</td>
+                                    <td class="cor">{{livro.publisher}}</td>
+                                    <td class="cor">{{livro.released}}</td>
                                 </tr>
                             {%endfor%}
                         </tbody>
