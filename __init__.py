@@ -26,7 +26,7 @@ def GOT():
         return render_template('index.html',info="")
     casa = dados[0]['allegiances']
     books = dados[0]['povBooks']
-    print(casa,books)
+    
     lista_casa = []
     lista_livro = []
 
@@ -34,7 +34,7 @@ def GOT():
         lista_livro.append(requests.get(line).json())
     for line in casa:
         lista_casa.append(requests.get(line).json())
-    return render_template('index.html',livro = lista_livro,casa=lista_casa,info=dados[0]) 
+    return render_template('index.html',livros = lista_livro,casas=lista_casa,info=dados[0]) 
     
 
 
